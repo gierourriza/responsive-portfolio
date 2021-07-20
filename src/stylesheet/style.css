@@ -1,0 +1,196 @@
+.container {
+	max-width: 911px;
+	margin: 0 auto;
+}
+
+
+header h1,h2 {
+	display: inline-block;
+}
+
+header h1 {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+header h2 {
+	float: right;
+	margin: 24px 25px;
+}
+
+.about {
+	padding: 25px 0;
+}
+
+#MyPhoto {
+	display: inline-block;
+	width: 350px;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.section1 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#about_me{
+	display: inline-block;
+	margin-left: 20px;
+	width: 500px;
+}
+
+#about_me h3{
+	background-color: gray;
+	color: white;
+	padding: 10px;
+}
+
+.section2 {
+	display: inline-block;
+	margin-top: 20px;
+	background: rgb(236, 228, 235);
+	margin-left: 25px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.section2 img {
+	margin: 0;
+	border: 0;
+	display: inline-block;
+	width: 250px;
+}
+
+.section2 p {
+	margin-left: 20px;
+	padding: 10px;
+	height: 200px;
+}
+
+.section2_info{
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: gray;
+	padding: 5px;
+	width: 260px;
+}
+
+.technologies {
+	text-align: left;
+}
+
+.technologies img {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 35px;
+	width: 35px;
+}
+
+footer {
+	text-align: center;
+}
+
+footer span {
+	display: block;
+	padding: 10px;
+}
+
+footer img {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+}
+
+footer div {
+	padding: 10px;
+}
+
+footer a {
+	color: black;
+	font-style: italic;
+}
+/*
+Media Queries
+
+
+Phone */
+@media only screen and (max-width: 500px) {
+	header{
+		text-align: center;
+	}
+
+	.section2 .section2_info{
+		display: none;
+	}
+
+	#about_me{
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+
+	}
+
+	.section2 .section2_info .section2_img {
+		display: none;
+	}
+
+	.section2_info p{
+		margin: 0 25px 0;
+		font-size: 20px;
+	}
+	
+}
+
+/*Tablet*/
+@media only screen and (max-width: 920px) {
+	header h2{
+		display: none;
+	}
+	
+
+	.about .section2 .section2_info{
+		display: block;
+	}
+	#MyPhoto{
+		display: none;
+	}
+
+	#about_me{
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+	}
+	.section1{
+		display: block;
+	}
+
+	.section2 .section2_info{
+		display: block;
+		width: 100%;
+		font-size: 25px;
+	}
+	.technologies {
+		text-align: center;
+	}
+	 footer div {
+        width: 100%;
+    }
+
+}
+/*Deskstop*/
+@media only screen and (min-width: 1024px) {
+	.lg-6 {
+        display: inline-block;
+		margin: 0 25px 0;
+    }
+	 footer div {
+        width: 100%;
+    }
+
+}
+
